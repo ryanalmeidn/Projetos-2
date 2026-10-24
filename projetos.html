@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça os projetos ambientais da ONG Raízes do Amanhã e descubra como participar.">
+    <title>Projetos | Raízes do Amanhã</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagemong.jpeg" type="image/x-icon">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="caixa-do-site">
+        <header>
+            <img src="imagemong.jpeg" alt="Logo da ONG Raízes do Amanhã" class="logo">
+            <h1>Raízes do Amanhã</h1>
+            <p>Conheça nossas iniciativas ambientais.</p>
+
+            <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="menuPrincipal" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav aria-label="Navegação principal">
+                <ul class="menu-principal" id="menuPrincipal">
+                    <li><a href="instituicao.html">Início</a></li>
+                    <li class="dropdown">
+                        <a href="projetos.html" aria-current="page">Projetos</a>
+                        <ul class="submenu">
+                            <li><a href="#reflorestamento">Reflorestamento</a></li>
+                            <li><a href="#fauna">Proteção da fauna</a></li>
+                            <li><a href="#rios">Preservação dos rios</a></li>
+                            <li><a href="#reciclagem">Reciclagem</a></li>
+                            <li><a href="#educacao-ambiental">Educação ambiental</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Nossos projetos</h2>
+                <p>Conheça os projetos e as iniciativas que desenvolvemos para proteger o meio ambiente e construir um futuro sustentável.</p>
+                <p>Nossa organização promove atividades ambientais e sociais que incentivam a participação da comunidade, a conscientização e a preservação dos recursos naturais.</p>
+                <div class="alert alert-info" role="status">Você pode participar das nossas iniciativas realizando seu cadastro como voluntário.</div>
+            </section>
+
+            <section class="projetos-grid" aria-label="Lista de projetos">
+                <article class="card-projeto" id="reflorestamento">
+                    <div class="imagem-trabalho">
+                        <img src="https://brazabe.com.br/wp-content/uploads/2021/05/a-brazabe-e-a-sustentabilidade.jpg" alt="Ação de plantio e recuperação ambiental" loading="lazy">
+                    </div>
+                    <div class="card-projeto-conteudo">
+                        <div class="badges">
+                            <span class="badge">Meio ambiente</span>
+                            <span class="badge badge-sucesso">Preservação</span>
+                        </div>
+                        <h2>Reflorestamento</h2>
+                        <p>Recuperamos áreas degradadas por meio do plantio de árvores nativas, contribuindo para a restauração dos ecossistemas e a preservação da biodiversidade.</p>
+                        <p>Nossos voluntários participam do plantio e acompanham o desenvolvimento das áreas restauradas.</p>
+                        <a class="btn" href="cadastro.html">Participar</a>
+                    </div>
+                </article>
+
+                <article class="card-projeto" id="fauna">
+                    <div class="imagem-trabalho">
+                        <img src="https://ecologia.ib.usp.br/lepac/conservacao/ensino/imagens/foto_direito_fauna.jpg" alt="Imagem relacionada à proteção da fauna silvestre" loading="lazy">
+                    </div>
+                    <div class="card-projeto-conteudo">
+                        <div class="badges">
+                            <span class="badge">Biodiversidade</span>
+                            <span class="badge badge-info">Conservação</span>
+                        </div>
+                        <h2>Proteção da fauna</h2>
+                        <p>Trabalhamos pela proteção dos animais silvestres e pela preservação de seus habitats naturais, buscando reduzir os impactos causados pelas atividades humanas.</p>
+                        <p>Nossas ações promovem conscientização sobre a importância de respeitar a vida silvestre.</p>
+                        <a class="btn" href="cadastro.html">Participar</a>
+                    </div>
+                </article>
+
+                <article class="card-projeto" id="rios">
+                    <div class="imagem-trabalho">
+                        <img src="https://www.pensamentoverde.com.br/wp-content/uploads/2023/12/banner-Projeto-Esse-Rio-E%CC%81-Meu-3.jpg" alt="Iniciativa de preservação de rios" loading="lazy">
+                    </div>
+                    <div class="card-projeto-conteudo">
+                        <div class="badges">
+                            <span class="badge">Recursos hídricos</span>
+                            <span class="badge badge-sucesso">Sustentabilidade</span>
+                        </div>
+                        <h2>Preservação dos rios</h2>
+                        <p>Promovemos ações de limpeza, conscientização e preservação das áreas próximas aos cursos d'água.</p>
+                        <p>Cuidar dos rios significa proteger a biodiversidade e conservar a água para as próximas gerações.</p>
+                        <a class="btn" href="cadastro.html">Participar</a>
+                    </div>
+                </article>
+
+                <article class="card-projeto" id="reciclagem">
+                    <div class="imagem-trabalho">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFs0CQ1tT3tE9kOdeYoAhYGBLwie-Q7qZTp7hy6mVX1c2o7-YfwqPxnZbh&s=10" alt="Materiais destinados à reciclagem" loading="lazy">
+                    </div>
+                    <div class="card-projeto-conteudo">
+                        <div class="badges">
+                            <span class="badge">Resíduos</span>
+                            <span class="badge badge-info">Educação</span>
+                        </div>
+                        <h2>Reciclagem</h2>
+                        <p>Incentivamos a separação e a destinação correta dos resíduos, reduzindo o descarte inadequado e estimulando hábitos sustentáveis.</p>
+                        <p>Por meio da educação ambiental, mostramos como pequenas mudanças contribuem para reduzir a produção de resíduos.</p>
+                        <a class="btn" href="cadastro.html">Participar</a>
+                    </div>
+                </article>
+
+                <article class="card-projeto" id="educacao-ambiental">
+                    <div class="imagem-trabalho">
+                        <img src="https://www.bernoulli.com.br/app/uploads/2025/03/Design-sem-nome-1280x720.jpg" alt="Atividade educativa sobre meio ambiente" loading="lazy">
+                    </div>
+                    <div class="card-projeto-conteudo">
+                        <div class="badges">
+                            <span class="badge">Educação</span>
+                            <span class="badge badge-alerta">Comunidade</span>
+                        </div>
+                        <h2>Educação ambiental</h2>
+                        <p>Levamos conhecimento sobre preservação ambiental para escolas e comunidades, incentivando atitudes responsáveis desde cedo.</p>
+                        <p>Por meio de atividades educativas e práticas, aproximamos as novas gerações da natureza e incentivamos uma cultura de preservação.</p>
+                        <a class="btn" href="cadastro.html">Participar</a>
+                    </div>
+                </article>
+            </section>
+
+            <section>
+                <h2>Faça parte dessa transformação</h2>
+                <p>Seu tempo e sua participação podem contribuir para um futuro mais verde. Cadastre-se para conhecer as oportunidades de voluntariado.</p>
+                <a class="btn" href="cadastro.html">Quero ser voluntário</a>
+            </section>
+        </main>
+
+<section>
+    <h2>Ajude a transformar o futuro</h2>
+    <p>Quer saber como contribuir com as nossas iniciativas ambientais?</p>
+    <button class="btn" type="button" data-modal-target="#modalParticipacao">
+        Saiba como participar
+    </button>
+</section>
+
+<div class="modal" id="modalParticipacao" role="dialog" aria-modal="true" aria-labelledby="tituloModalParticipacao">
+    <div class="modal-conteudo">
+        <div class="modal-cabecalho">
+            <h2 id="tituloModalParticipacao">Participe dos nossos projetos</h2>
+            <button class="modal-fechar" type="button" data-modal-close aria-label="Fechar janela">×</button>
+        </div>
+        <p>Você pode contribuir com ações de reflorestamento, proteção da fauna, preservação dos rios, reciclagem e educação ambiental.</p>
+        <div class="modal-rodape">
+            <button class="btn btn-contorno" type="button" data-modal-close>Fechar</button>
+            <a class="btn" href="cadastro.html">Fazer cadastro</a>
+        </div>
+    </div>
+</div>
+
+        <footer>
+            <h2>Contato</h2>
+            <div>
+                <p><strong>E-mail:</strong> contato@raizesdoamanha.org.br</p>
+                <p><strong>WhatsApp / Telefone:</strong> (00) 90000-0000</p>
+                <p><strong>Endereço:</strong> Rua das Palmeiras, 123 — São Paulo - SP</p>
+            </div>
+            <div>
+                <p><strong>Redes sociais</strong></p>
+                <ul>
+                    <li>Instagram: @ongraizesdoamanha</li>
+                    <li>Facebook: /ongraizesdoamanha</li>
+                </ul>
+            </div>
+            <p>&copy; 2026 Raízes do Amanhã. Todos os direitos reservados.</p>
+            <p>Organização fictícia criada para fins acadêmicos.</p>
+        </footer>
+    </div>
+
+    <button id="btnTopo" type="button" title="Voltar ao topo" aria-label="Voltar ao topo">↑</button>
+</body>
+</html>

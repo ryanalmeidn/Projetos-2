@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cadastre-se na ONG Raízes do Amanhã e faça parte da nossa rede de voluntários e apoiadores da preservação ambiental.">
+    <title>Cadastro | Raízes do Amanhã</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagemong.jpeg" type="image/x-icon">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="caixa-do-site">
+        <header>
+            <img src="imagemong.jpeg" alt="Logo da ONG Raízes do Amanhã" class="logo">
+            <h1>Raízes do Amanhã</h1>
+            <p>Faça parte da nossa rede de voluntários.</p>
+
+            <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="menuPrincipal" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav aria-label="Navegação principal">
+                <ul class="menu-principal" id="menuPrincipal">
+                    <li><a href="instituicao.html">Início</a></li>
+                    <li class="dropdown">
+                        <a href="projetos.html">Projetos</a>
+                        <ul class="submenu">
+                            <li><a href="projetos.html#reflorestamento">Reflorestamento</a></li>
+                            <li><a href="projetos.html#fauna">Proteção da fauna</a></li>
+                            <li><a href="projetos.html#rios">Preservação dos rios</a></li>
+                            <li><a href="projetos.html#reciclagem">Reciclagem</a></li>
+                            <li><a href="projetos.html#educacao-ambiental">Educação ambiental</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cadastro.html" aria-current="page">Cadastro</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Página de cadastro</h2>
+                <p>Cadastre-se na Raízes do Amanhã e faça parte da nossa rede de pessoas comprometidas com a preservação ambiental.</p>
+                <p>Com seus dados, nossa equipe poderá entrar em contato para convidar você a participar de ações de reflorestamento, educação ambiental e campanhas de conscientização.</p>
+                <div class="alert alert-info" role="status">Os campos marcados como obrigatórios devem ser preenchidos corretamente.</div>
+            </section>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+
+                    <p>
+                        <label for="nome">Nome completo *</label>
+                        <input type="text" id="nome" name="nome" autocomplete="name" minlength="3" maxlength="100" placeholder="Digite seu nome completo" required>
+                    </p>
+
+                    <p>
+                        <label for="cpf">CPF *</label>
+                        <input type="text" id="cpf" name="cpf" inputmode="numeric" autocomplete="off" placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Informe o CPF no formato 000.000.000-00" minlength="14" maxlength="14" required>
+                    </p>
+
+                    <p>
+                        <label for="data-nascimento">Data de nascimento *</label>
+                        <input type="date" id="data-nascimento" name="data_nascimento" autocomplete="bday" min="1900-01-01" max="2026-10-23" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contato</legend>
+
+                    <p>
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" autocomplete="email" placeholder="nome@exemplo.com" maxlength="120" required>
+                    </p>
+
+                    <p>
+                        <label for="telefone">Telefone *</label>
+                        <input type="tel" id="telefone" name="telefone" autocomplete="tel" placeholder="(00) 00000-0000" pattern="\(\d{2}\) \d{4,5}-\d{4}" title="Informe o telefone no formato (00) 00000-0000 ou (00) 0000-0000" minlength="14" maxlength="15" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Endereço</legend>
+
+                    <p>
+                        <label for="endereco">Endereço completo *</label>
+                        <input type="text" id="endereco" name="endereco" autocomplete="street-address" placeholder="Rua, número e complemento" maxlength="150" required>
+                    </p>
+
+                    <p>
+                        <label for="cep">CEP *</label>
+                        <input type="text" id="cep" name="cep" inputmode="numeric" autocomplete="postal-code" placeholder="00000-000" pattern="\d{5}-\d{3}" title="Informe o CEP no formato 00000-000" minlength="9" maxlength="9" required>
+                    </p>
+
+                    <p>
+                        <label for="cidade">Cidade *</label>
+                        <input type="text" id="cidade" name="cidade" autocomplete="address-level2" maxlength="80" required>
+                    </p>
+
+                    <p>
+                        <label for="estado">Estado *</label>
+                        <select id="estado" name="estado" autocomplete="address-level1" required>
+                            <option value="">Selecione o estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <div class="form-acoes">
+                    <button type="submit">Enviar cadastro</button>
+                    <button type="reset">Limpar formulário</button>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <h2>Contato</h2>
+            <div>
+                <p><strong>E-mail:</strong> contato@raizesdoamanha.org.br</p>
+                <p><strong>WhatsApp / Telefone:</strong> (00) 90000-0000</p>
+                <p><strong>Endereço:</strong> Rua das Palmeiras, 123 — São Paulo - SP</p>
+            </div>
+            <div>
+                <p><strong>Redes sociais</strong></p>
+                <ul>
+                    <li>Instagram: @ongraizesdoamanha</li>
+                    <li>Facebook: /ongraizesdoamanha</li>
+                </ul>
+            </div>
+            <p>&copy; 2026 Raízes do Amanhã. Todos os direitos reservados.</p>
+            <p>Organização fictícia criada para fins acadêmicos.</p>
+        </footer>
+    </div>
+
+    <button id="btnTopo" type="button" title="Voltar ao topo" aria-label="Voltar ao topo">↑</button>
+</body>
+</html>
